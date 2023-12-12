@@ -9,8 +9,8 @@ const defaults = () => { return {
     PORT        : 3001,
     DB_PORT     : 5432,
     CLIENT_PORT : 5173,
-    VERBOSE     : 2   ,
-    MORGAN      : 1   
+    VERBOSE     : 0   ,
+    MORGAN      : 0   
     }}
     appConfig = ()=>{
         if (!process.env.SINCE) {
