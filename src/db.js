@@ -9,7 +9,7 @@ rdsCa = fs.readFile(rdsCa,
       { encoding: 'utf8', flag: 'r' },
         function (err, data) {
             if (err)
-               ''
+              return  ''
             else
                return data
         }
