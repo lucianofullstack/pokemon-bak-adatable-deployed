@@ -2,7 +2,6 @@ const defaults = () => { return {
     CLIENT_URL  : "localhost",
     API         : "https://pokeapi.co/api/v2/",
     PORT        : 3001,
-    DB_PORT     : 5432,
     CLIENT_PORT : 5173,
     VERBOSE     : 0   ,
     MORGAN      : 0   
