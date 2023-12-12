@@ -1,5 +1,4 @@
 const defaults = () => { return {
-    NODE_ENV    : "production",
     DB_DIALECT  : "postgres",
     DB_HOST     : "user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com",
     CLIENT_URL  : "localhost",
@@ -22,7 +21,7 @@ const defaults = () => { return {
                   const db = {},
                     result = require('dotenv').config({ processEnv: db })
                   if (!result.error) {
-                    "PORT, MODE_ENV, DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_DIALECT, CLIENT_PORT, CLIENT_URL"
+                    "PORT, NODE_ENV, DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_DIALECT, CLIENT_PORT, CLIENT_URL"
                       .split(", ")
                       .forEach((value) => {
                         if ( db[value]) {
