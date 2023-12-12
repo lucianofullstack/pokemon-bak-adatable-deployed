@@ -7,7 +7,6 @@ const defaults = () => { return {
     DB_HOST     : 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com',
     DB_NAME     : 'pokemon-back-main-db-0e3f4fe4267cc494c',
     DB_USER     : 'pokemon-back-main-db-0e3f4fe4267cc494c',
-    DB_PASSWORD : 'eFs12NgpzCHCDAs44paVeGkKKPJFHh',
     CLIENT_URL  : "localhost",
     DB_PORT     : 5432,
     PORT        : 3001,
