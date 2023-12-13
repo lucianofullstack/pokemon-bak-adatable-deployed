@@ -42,11 +42,7 @@ if (process.env.MORGAN === 1) {
 app.use((req, res, next) => {
     res.header(
       'Access-Control-Allow-Origin', 
-      `http${
-        (process.env.NODE_ENV==='production')
-        ?'s'
-        :''
-      }://${process.env.CLIENT_URL}${
+      `${process.env.CLIENT_URL}${
         (process.env.NODE_ENV==='production')
         ?''
         :':'+process.env.CLIENT_PORT
